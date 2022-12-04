@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.baeldung.kafka.streams.KafkaStreamsApplicationLiveTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.302 s <<< FAILURE! - in com.baeldung.kafka.streams.KafkaStreamsApplicationLiveTest
+com.baeldung.kafka.streams.KafkaStreamsApplicationLiveTest  Time elapsed: 0.302 s  <<< ERROR!
+java.nio.file.InvalidPathException: Illegal char <"> at index 0: "C:\Users\SOULEYSANOGO\AppData\Local\Android\sdk\tools
+

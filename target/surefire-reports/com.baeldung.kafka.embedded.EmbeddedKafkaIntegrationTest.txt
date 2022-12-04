@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.baeldung.kafka.embedded.EmbeddedKafkaIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 32.325 s <<< FAILURE! - in com.baeldung.kafka.embedded.EmbeddedKafkaIntegrationTest
+givenEmbeddedKafkaBroker_whenSendingWithDefaultTemplate_thenMessageReceived  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'embeddedKafka': Invocation of init method failed; nested exception is org.apache.kafka.common.KafkaException: Socket server failed to bind to localhost:9092: Address already in use: bind.
+Caused by: org.apache.kafka.common.KafkaException: Socket server failed to bind to localhost:9092: Address already in use: bind.
+Caused by: java.net.BindException: Address already in use: bind
+
+givenEmbeddedKafkaBroker_whenSendingWithSimpleProducer_thenMessageReceived  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'embeddedKafka': Invocation of init method failed; nested exception is org.apache.kafka.common.KafkaException: Socket server failed to bind to localhost:9092: Address already in use: bind.
+Caused by: org.apache.kafka.common.KafkaException: Socket server failed to bind to localhost:9092: Address already in use: bind.
+Caused by: java.net.BindException: Address already in use: bind
+
